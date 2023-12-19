@@ -1,0 +1,22 @@
+<div class="inputBoxWidth margin-top border cursor">
+   <form [formGroup]="signUpForm" (ngSubmit)="save()">
+      <h2 class="text-center">Admin Registration Form</h2>
+      <mat-form-field class="inputBoxWidth1" #topInputBox>
+         <mat-label>Admin Name</mat-label>
+         <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field class="inputBoxWidth1">
+         <mat-label>Mobile Number</mat-label>
+         <input matInput type="number" formControlName="mobile">
+      </mat-form-field>
+      <mat-form-field class="inputBoxWidth1">
+         <mat-label>Email Address</mat-label>
+         <input matInput formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="inputBoxWidth1">
+         <mat-label>Password</mat-label>
+         <input matInput type="password" formControlName="password">
+      </mat-form-field>
+      <button mat-flat-button color="accent" class="inputBoxWidth1" type="submit">SIGN UP</button>
+   </form>
+</div>
